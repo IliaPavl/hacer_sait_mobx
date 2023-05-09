@@ -1,14 +1,14 @@
 import { HOME_PAGE, NEWS_PAGE } from "../const/Consts";
-import HomePage from "../pages/HomePage";
-import NewsPage from "../pages/NewsPage";
+import { HomePageMobx } from "../pages/HomePageMobx";
+import { NewsPageMobx } from "../pages/NewsPageMobx";
 
 export const publicRoutes = [
     {
         path: HOME_PAGE,
-        Component: HomePage
+        Component: HomePageMobx
     },
     {
         path: NEWS_PAGE + "/:id_news",
-        Component: NewsPage
+        Component: NewsPageMobx
     },
 ]
